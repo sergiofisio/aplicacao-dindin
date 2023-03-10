@@ -1,0 +1,68 @@
+@import "../../styles.css";
+
+.container-filtro {
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 959px;
+  margin: 0 0 61px 0;
+  padding: 32px 0 13px 31px;
+}
+
+.wrap-categorias-botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrap-categorias-botoes > strong {
+  color: #b9b9b9;
+  font-family: var(--font_rubik);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.wrap-categorias-botoes > .container-categorias {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: 60vw;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.wrap-categorias-botoes > .container-botoes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.wrap-categorias-botoes > .container-botoes > .botao-roxo,
+.wrap-categorias-botoes > .container-botoes > .botao {
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: var(--font_lato);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 98px;
+  height: 30px;
+  padding: 8px 4px;
+  transition: ease-in 0.2s;
+}
+
+.wrap-categorias-botoes > .container-botoes > .botao-roxo:hover {
+  font-size: 12px;
+  transition: ease-in 0.2s;
+}

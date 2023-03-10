@@ -1,0 +1,133 @@
+@import "../../styles.css";
+
+.tabela {
+  max-height: 433px;
+  height: 100%;
+}
+
+.tabela .cabecalho-tabela {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 27px;
+  height: 60px;
+}
+.tabela .corpo-tabela {
+  overflow-y: auto;
+  min-height: 112px;
+  height: inherit;
+}
+.tabela .data-seta {
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+.tabela .data-seta p {
+  width: fit-content;
+}
+.tabela .data-seta .seta-invertida {
+  transform: rotate(180deg);
+}
+.tabela p,
+.tabela .editar-excluir {
+  width: 150px;
+  height: 100%;
+  text-align: center;
+}
+.tabela p:first-child,
+.tabela p:nth-child(5),
+.tabela .linha-tabela .editar-excluir {
+  text-align: left;
+  font-weight: 700;
+}
+.tabela .linha-tabela {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px;
+  height: 70px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.tabela .valor-entrada {
+  color: var(--azul_roxo);
+}
+.tabela .valor-saida {
+  color: var(--laranja);
+}
+.tabela .linha-tabela .editar-excluir {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+  position: relative;
+}
+.miniModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../assets/balao.svg");
+  background-size: cover;
+  position: absolute;
+  right: 36px;
+  top: 28px;
+  gap: 4px;
+  padding: 14px 15px 8px 15px;
+  z-index: 2;
+  animation: popUp 0.4s forwards;
+}
+.miniModal p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.miniModal .apagar-transac {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.miniModal .apagar-transac button:first-child {
+  background-color: #3a9ff1;
+  border-radius: 4px;
+  width: 37px;
+  padding: 2px 10px;
+}
+.miniModal .apagar-transac button:last-child {
+  background-color: #ff576b;
+  border-radius: 4px;
+  width: 37px;
+  padding: 2px 10px;
+}
+
+.escondido {
+  display: none;
+}
+
+.corpo-tabela::-webkit-scrollbar {
+  width: 5px;
+}
+.corpo-tabela::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgb(128, 128, 128, 0.5);
+}

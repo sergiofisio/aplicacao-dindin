@@ -1,0 +1,19 @@
+@import "../../styles.css";
+
+.cadastro > .container-right > button {
+  margin-top: 7px;
+}
+
+.cadastro > .container-right > p {
+  color: var(--azul_roxo);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 8px;
+}
+
+.cadastro > .container-right > a {
+  color: var(--azul_roxo);
+  text-decoration: none;
+}

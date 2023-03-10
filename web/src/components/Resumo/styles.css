@@ -1,0 +1,56 @@
+@import "../../styles.css";
+
+.container-resumo .resumo {
+  background-color: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  height: 196px;
+  width: 236px;
+  border-radius: 10px;
+  padding: 26px 33px 31px 33px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container-resumo .resumo .resumo-linha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+.container-resumo .resumo .resumo-linha .saldo-positivo {
+  color: var(--azul_claro);
+}
+.container-resumo .resumo .resumo-linha:last-child {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+.container-resumo .resumo .divisor {
+  width: 189px;
+  border: 1px solid #eaeaea;
+}
+.container-resumo button {
+  font-family: var(--font_rubik);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  height: 46px;
+  width: 236px;
+  border-radius: 5px;
+}
+
+.valor-entrada {
+  color: var(--azul_roxo);
+}
+
+.valor-saida {
+  color: var(--laranja);
+}

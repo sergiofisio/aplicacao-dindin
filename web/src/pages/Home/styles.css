@@ -1,0 +1,136 @@
+@import "../../styles.css";
+
+.container-home {
+  background-color: #fff;
+  border-radius: 60px 60px 0px 0px;
+  width: 100%;
+  height: calc(100vh - 116px);
+  position: absolute;
+  top: 116px;
+  padding: 55px 100px 55px 105px;
+  font-family: "Lato", sans-serif;
+  z-index: 1;
+}
+
+.filtrar {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #fafafa;
+  box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 15px;
+  gap: 4px;
+  margin-bottom: 25px;
+}
+
+.filtrar::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
+}
+
+.aberto::after {
+  content: "";
+  border-top: 0;
+  border-bottom: 5px solid;
+}
+
+.filtrar:active {
+  animation: bounce 0.1s ease-in;
+}
+
+.tabela-resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 34px;
+  height: 100%;
+}
+
+.wrap-filtro-tabela {
+  height: 100%;
+}
+
+.wrap-filtro {
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+}
+
+.wrap-filtro.collapsed {
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+@media screen and (max-width: 1440px) {
+  .container-home {
+    padding: 55px 70px 55px 70px;
+  }
+
+  .tabela-resumo {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .filtrar {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .filtrar::after {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+  }
+
+  .aberto::after {
+    border-bottom-width: 3px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container-home {
+    padding: 55px 50px 55px 50px;
+  }
+
+  .tabela-resumo {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .filtrar {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .filtrar::after {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+  }
+
+  .aberto::after {
+    border-bottom-width: 3px;
+  }
+
+  .wrap-filtro {
+    gap: 10px;
+  }
+
+  .wrap-filtro-tabela {
+    width: 80%;
+  }
+}
